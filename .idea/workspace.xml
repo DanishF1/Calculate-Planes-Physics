@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b571cfa-2897-4b98-bbc0-1bd06a794e83" name="Changes" comment="initial commit">
+    <list default="true" id="8b571cfa-2897-4b98-bbc0-1bd06a794e83" name="Changes" comment="Adding Inits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,61 +36,61 @@
 }]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000003916314606" />
-      <entry key="S2" value="1.025016092692661" />
-      <entry key="S5" value="1.229184132426941" />
-      <entry key="S10" value="1.4999808546732685" />
-      <entry key="S30" value="2.061123075250909" />
-      <entry key="S60" value="2.412798034856557" />
-      <entry key="M2" value="2.699610588857958" />
-      <entry key="M5" value="3.5989274967426126" />
-      <entry key="M10" value="5.037389421382102" />
-      <entry key="M15" value="5.940849516358478" />
-      <entry key="M30" value="7.210893815851751" />
-      <entry key="H1" value="8.02881931244893" />
-      <entry key="H2" value="8.493551475614325" />
-      <entry key="H4" value="8.741331988073526" />
-      <entry key="D1" value="8.956112311747177" />
-      <entry key="W1" value="8.993711047395237" />
+      <entry key="MS100" value="1.0103406854526398" />
+      <entry key="MS500" value="1.5730347139201046" />
+      <entry key="S2" value="2.8556372840644983" />
+      <entry key="S5" value="3.467839630318778" />
+      <entry key="S10" value="3.8797361713331853" />
+      <entry key="S30" value="6.240382274159337" />
+      <entry key="S60" value="10.315544647493555" />
+      <entry key="M2" value="16.05103594525362" />
+      <entry key="M5" value="23.401118891635246" />
+      <entry key="M10" value="28.089405687660552" />
+      <entry key="M15" value="30.443521099285533" />
+      <entry key="M30" value="33.58392733817849" />
+      <entry key="H1" value="35.590622226486005" />
+      <entry key="H2" value="36.73842530768493" />
+      <entry key="H4" value="37.35407231990543" />
+      <entry key="D1" value="37.890159402180785" />
+      <entry key="W1" value="37.98425383062242" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="MS500" value="7.563795994007036E-68" />
+      <entry key="S2" value="1.6583834373206937E-17" />
+      <entry key="S5" value="1.9403233579980323E-7" />
+      <entry key="S10" value="4.4073301555929556E-4" />
+      <entry key="S30" value="0.08231956818097885" />
+      <entry key="S60" value="0.35478385648049793" />
+      <entry key="M2" value="0.8061747830258155" />
+      <entry key="M5" value="1.3747310641204875" />
+      <entry key="M10" value="1.6549239608168822" />
+      <entry key="M15" value="1.7620036398666974" />
+      <entry key="M30" value="1.8768261095188457" />
+      <entry key="H1" value="1.9373291656609666" />
+      <entry key="H2" value="1.9683884394977" />
+      <entry key="H4" value="1.984124526200634" />
+      <entry key="D1" value="1.997344351680806" />
+      <entry key="W1" value="1.9996203824970011" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8766057213160351" />
-      <entry key="MS500" value="0.9740042810562153" />
-      <entry key="S2" value="1.0040131938405277" />
-      <entry key="S5" value="1.159881257955022" />
-      <entry key="S10" value="1.4219975895660704" />
-      <entry key="S30" value="2.0126135556825964" />
-      <entry key="S60" value="2.383331778330935" />
-      <entry key="M2" value="2.683186134481327" />
-      <entry key="M5" value="3.5918663232891417" />
-      <entry key="M10" value="5.033755698872148" />
-      <entry key="M15" value="5.938399942354024" />
-      <entry key="M30" value="7.209653769779427" />
-      <entry key="H1" value="8.028195055277344" />
-      <entry key="H2" value="8.493238225227664" />
-      <entry key="H4" value="8.741175073727062" />
-      <entry key="D1" value="8.9560861184171" />
-      <entry key="W1" value="8.993707304477914" />
+      <entry key="MS100" value="0.9692523508034117" />
+      <entry key="MS500" value="1.5606197977933411" />
+      <entry key="S2" value="2.8501410949594193" />
+      <entry key="S5" value="3.4651500977051883" />
+      <entry key="S10" value="3.877335851091796" />
+      <entry key="S30" value="6.294475373757391" />
+      <entry key="S60" value="10.614803127602102" />
+      <entry key="M2" value="16.796286350028357" />
+      <entry key="M5" value="24.734316097831872" />
+      <entry key="M10" value="29.71897194769709" />
+      <entry key="M15" value="32.18738419487982" />
+      <entry key="M30" value="35.45099625957582" />
+      <entry key="H1" value="37.52288614278489" />
+      <entry key="H2" value="38.70423239132263" />
+      <entry key="H4" value="39.3368937127695" />
+      <entry key="D1" value="39.88728481121226" />
+      <entry key="W1" value="39.98384289233306" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -107,8 +113,10 @@
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "to.speed.mode.migration.done": "true"
@@ -128,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1787844915507</updated>
-      <workItem from="1787844916367" duration="1269000" />
+      <workItem from="1787844916367" duration="1596000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -138,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1787845146338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding Inits">
+      <option name="closed" value="true" />
+      <created>1787846432794</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1787846432794</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,13 +162,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Adding Inits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Inits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
+          <url>file://$PROJECT_DIR$/Init.py</url>
           <line>40</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
