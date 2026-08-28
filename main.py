@@ -1,8 +1,7 @@
 import asyncio
 import plane
 from plane import CalculatePlane
-global x
-x = 0
+
 class opening():
 
     def startAsync(self):

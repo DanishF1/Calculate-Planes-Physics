@@ -23,7 +23,8 @@ class CalculatePlane():
         return taperRatio
 
     async def lift(self, sweepAngle, wingsArea, stallSpeed):
-        lift = 0.5 * (stallSpeed * cos(sweepAngle))**2 * wingsArea * 0.4
+        sweep_radian = math.radians(sweepAngle)
+        lift = 0.5 * 1.225 * (stallSpeed * math.cos(sweep_radian))**2 * wingsArea * 0.4
         return lift
 
     async def mac(self, rootChord, taperRatio):
@@ -50,19 +51,24 @@ class CalculatePlane():
             wingsLength = float(self.wingsLength)
             rootChord = float(self.rootChord)
             tipLength = float(self.tipLength)
-            sweepAngle = int(self.sweepAngle)
+            sweepAngle = float(self.sweepAngle)
         except:
             print("Invalid input, restarting operation...")
-            return self.calculatePlane()
+            return await self.calculatePlane()
 
         task1 = await asyncio.create_task(self.stallsp(weight, wingsArea))
         task2 = await asyncio.create_task(self.aspectr(wingsLength, wingsArea))
         task3 = await asyncio.create_task(self.wingr(weight, wingsArea))
         task4 = await asyncio.create_task(self.taperr(tipLength, rootChord))
         task5 = await asyncio.create_task(self.lift(sweepAngle, wingsArea, task1))
-        task6 = await asyncio.create_task(self.mac(rootChord, task5))
-        print (task1, task2, task3, task4, task6)
+        task6 = await asyncio.create_task(self.mac(rootChord, task4))
 
+        print(f"Stall Speed: {task1}")
+        print(f"Aspect Ratio: {task2}")
+        print(f"Wing Ratio: {task3}")
+        print(f"Taper Ratio: {task4}")
+        print(f"Lift: {task5}")
+        print(f"MAC: {task6}")
 
 
 
