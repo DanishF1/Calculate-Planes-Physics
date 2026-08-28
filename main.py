@@ -9,8 +9,7 @@ class opening():
 
         x = (input
              (""""What do u want?
-             1. Configure plane values
-             2. Calculate plane params
+             1. Calculate plane params
              """))
         try:
             valuex = int(x)
@@ -21,7 +20,7 @@ class opening():
         if 0<valuex<3:
             match valuex:
                 case 1:
-                    CalculatePlane().inputData()
+                    CalculatePlane().calculatePlane()
                 case 2:
                     ...
 
