@@ -5,6 +5,9 @@ global x
 x = 0
 class opening():
 
+    def startAsync(self):
+        if __name__ == "__main__":
+            asyncio.run(CalculatePlane().calculatePlane())
     def startServices(self):
 
         x = (input
@@ -20,7 +23,7 @@ class opening():
         if 0<valuex<3:
             match valuex:
                 case 1:
-                    CalculatePlane().calculatePlane()
+                    self.startAsync()
                 case 2:
                     ...
 

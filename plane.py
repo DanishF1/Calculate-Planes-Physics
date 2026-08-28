@@ -4,22 +4,38 @@ from cmath import sqrt
 from math import cos
 from math import sqrt
 
-global airDensity
-airDensity = 1.225
-global stallSpeed
-global coefficient
-
 class CalculatePlane():
-    def __init__(self):
-        asyncio.run(self.calculatePlane())
+
+    async def stallsp(self, weight, wingsArea):
+        stallSpeed = sqrt((2 * 9.81 * weight) / (1.225 * wingsArea * 1.2))
+        return stallSpeed
+
+    async def aspectr(self, wingsLength, wingsArea):
+        aspectRatio = (wingsLength) ** 2 / wingsArea
+        return aspectRatio
+
+    async def wingr(self, weight, wingsArea):
+        wingRatio = weight / wingsArea
+        return wingRatio
+
+    async def taperr(self, tipLength, rootChord):
+        taperRatio = tipLength / rootChord
+        return taperRatio
+
+    async def lift(self, sweepAngle, wingsArea, stallSpeed):
+        lift = 0.5 * (stallSpeed * cos(sweepAngle))**2 * wingsArea * 0.4
+        return lift
+
+    async def mac(self, rootChord, taperRatio):
+        MAC = 2 / 3 * rootChord * (1 + taperRatio + (taperRatio) ** 2) / (1 + taperRatio)
+        return MAC
 
     async def calculatePlane(self):
         x = input("Plane have sweep? [Y/N]")
         if x == "Y" or x == "y":
-            self.sweepAngle = 0
-
-        elif x == "N" or x == "n":
             self.sweepAngle = input("Angle on LE Sweep? (decimal)")
+        elif x == "N" or x == "n":
+            self.sweepAngle = 0
         else:
             print("Invalid input")
             return
@@ -32,7 +48,6 @@ class CalculatePlane():
             wingsArea = float(self.wingsArea)
             weight = float(self.weight)
             wingsLength = float(self.wingsLength)
-            tipLength = float(self.tipLength)
             rootChord = float(self.rootChord)
             tipLength = float(self.tipLength)
             sweepAngle = int(self.sweepAngle)
@@ -40,12 +55,21 @@ class CalculatePlane():
             print("Invalid input, restarting operation...")
             return self.calculatePlane()
 
-        stallSpeed = sqrt((2 * 9.81 * weight)/(airDensity * wingsArea * 1.2))
-        aspectRatio = (wingsLength)**2 / wingsArea
-        wingRatio = weight/wingsArea
-        taperRatio = tipLength/rootChord
-        lift = 0.5 * (stallSpeed * cos(sweepAngle))**2 * wingsArea * coefficient
-        MAC = 2/3 * rootChord * (1 + taperRatio + (taperRatio)**2)/(1 + taperRatio)
+        task1 = await asyncio.create_task(self.stallsp(weight, wingsArea))
+        task2 = await asyncio.create_task(self.aspectr(wingsLength, wingsArea))
+        task3 = await asyncio.create_task(self.wingr(weight, wingsArea))
+        task4 = await asyncio.create_task(self.taperr(tipLength, rootChord))
+        task5 = await asyncio.create_task(self.lift(sweepAngle, wingsArea, task1))
+        task6 = await asyncio.create_task(self.mac(rootChord, task5))
+        print (task1, task2, task3, task4, task6)
+
+
+
+
+
+
+
+
 
 
 
