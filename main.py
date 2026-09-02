@@ -78,6 +78,7 @@ class MainCalc(QWidget):
         self.col1.addWidget(self.rootChord)
         self.col1.addWidget(self.t6)
         self.col1.addWidget(self.weight)
+        self.col1.addWidget(self.calculate)
 
         self.col2.addWidget(self.editText)
         self.master.addLayout(self.col1, 45)
@@ -87,7 +88,7 @@ class MainCalc(QWidget):
         self.setLayout(self.master)
 
     def calculateNow(self):
-        CalculatePlane().inputData()
+        CalculatePlane()
 
 
 class opening():
