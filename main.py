@@ -21,11 +21,15 @@ from PyQt5.QtWidgets import (
     )
 from PyQt5.QtGui import QFont
 
-class Main(QWidget):
+class MainCalc(QWidget):
     def __init__(self):
         super().__init__()
-        ...
+        self.initUI()
+
     def initUI(self):
+        self.setWindowTitle("Calculate Plane Physics")
+        self.setGeometry(980, 540, 500, 600)
+
         #COLUMN 1
         self.t1 = QLineEdit("Sweep Angle [θ]:")
         self.t1.setReadOnly(True)
@@ -54,7 +58,9 @@ class Main(QWidget):
         self.calculate = QPushButton("Calculate")
         self.calculate.clicked.connect(self.calculateNow)
 
-
+        #COLUMN 2
+        self.editText = QTextEdit()
+        self.editText.setReadOnly(True)
 
         self.master = QHBoxLayout()
         self.col1 = QVBoxLayout()
@@ -62,9 +68,27 @@ class Main(QWidget):
 
         self.col1.addWidget(self.t1)
         self.col1.addWidget(self.sweepAngle)
+        self.col1.addWidget(self.t2)
+        self.col1.addWidget(self.wingsArea)
+        self.col1.addWidget(self.t3)
+        self.col1.addWidget(self.wingsLength)
+        self.col1.addWidget(self.t4)
+        self.col1.addWidget(self.tipLength)
+        self.col1.addWidget(self.t5)
+        self.col1.addWidget(self.rootChord)
+        self.col1.addWidget(self.t6)
+        self.col1.addWidget(self.weight)
 
-        def calculateNow(self):
-            CalculatePlane().inputData()
+        self.col2.addWidget(self.editText)
+        self.master.addLayout(self.col1, 45)
+        self.master.addLayout(self.col2, 55)
+
+        self.col1.setSpacing(2)
+        self.setLayout(self.master)
+
+    def calculateNow(self):
+        CalculatePlane().inputData()
+
 
 class opening():
 
@@ -90,14 +114,10 @@ class opening():
 
 
 if __name__ == '__main__':
-    # Inisialisasi aplikasi
+    # Run it down
     app = QApplication(sys.argv)
-
-    # Buat dan tampilkan jendela
-    window = SimpleApp()
+    window = MainCalc()
     window.show()
-
-    # Jalankan event loop
     sys.exit(app.exec_())
 
 
