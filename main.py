@@ -29,6 +29,24 @@ class MainCalc(QWidget):
     def initUI(self):
         self.setWindowTitle("Calculate Plane Physics")
         self.setGeometry(980, 540, 500, 600)
+        self.setStyleSheet("""
+                    QWidget {
+                        background-color: #333; /* Darker background color */
+                        color: #fff; /* Text color */
+                    }
+
+                    QPushButton {
+                        background-color: #66a3ff; /* Lighter background color for buttons */
+                        color: #333; /* Text color for buttons */
+                        border: 1px solid #fff; /* White border for buttons */
+                        border-radius: 5px; /* Rounded corners for buttons */
+                        padding: 5px 10px; /* Padding for buttons */
+                    }
+
+                    QPushButton:hover {
+                        background-color: #3399ff; /* Lighter background color for buttons on hover */
+                    }
+                """)
 
         #COLUMN 1
         self.t1 = QLabel("Sweep Angle [θ]:")
@@ -83,30 +101,6 @@ class MainCalc(QWidget):
 
     def calculateNow(self):
         CalculatePlane()
-
-
-class opening():
-
-    def startServices(self):
-
-        x = (input
-             (""""What do u want?
-             1. Configure plane values
-             2. Calculate plane params
-             """))
-        try:
-            valuex = int(x)
-        except:
-            print("invalid input")
-            return opening().startServices()
-
-        if 0<valuex<3:
-            match valuex:
-                case 1:
-                    CalculatePlane().inputData()
-                case 2:
-                    ...
-
 
 if __name__ == '__main__':
     # Run it down
