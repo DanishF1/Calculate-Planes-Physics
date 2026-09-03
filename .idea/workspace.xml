@@ -38,23 +38,23 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000000045748" />
-      <entry key="MS500" value="1.006509771742978" />
-      <entry key="S2" value="1.4834241056537947" />
-      <entry key="S5" value="2.4677441296189255" />
-      <entry key="S10" value="3.3384378828609202" />
-      <entry key="S30" value="4.316471013848965" />
-      <entry key="S60" value="4.638321071041451" />
-      <entry key="M2" value="4.813848594883366" />
-      <entry key="M5" value="4.924219184646482" />
-      <entry key="M10" value="4.961888798331637" />
-      <entry key="M15" value="4.975593096292566" />
-      <entry key="M30" value="5.42717873687828" />
-      <entry key="H1" value="16.59644040624892" />
-      <entry key="H2" value="76.59968808082199" />
-      <entry key="H4" value="196.18468706219795" />
-      <entry key="D1" value="456.7621235176128" />
-      <entry key="W1" value="530.5262079069596" />
+      <entry key="MS100" value="1.0000000016441624" />
+      <entry key="MS500" value="1.017507040289113" />
+      <entry key="S2" value="1.4094310880045562" />
+      <entry key="S5" value="2.1850835601446303" />
+      <entry key="S10" value="3.0465168404649052" />
+      <entry key="S30" value="4.5645183044314575" />
+      <entry key="S60" value="5.976955493400777" />
+      <entry key="M2" value="7.438535295953109" />
+      <entry key="M5" value="8.796023385065999" />
+      <entry key="M10" value="9.362959596034178" />
+      <entry key="M15" value="9.568052205165777" />
+      <entry key="M30" value="10.202337749563785" />
+      <entry key="H1" value="21.26625374785608" />
+      <entry key="H2" value="80.84878404335716" />
+      <entry key="H4" value="200.22392723987107" />
+      <entry key="D1" value="461.38900373195685" />
+      <entry key="W1" value="535.4642832103181" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -62,37 +62,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="3.0311712015296322E-145" />
-      <entry key="S60" value="7.342976636908541E-73" />
-      <entry key="M2" value="1.193570240620829E-36" />
-      <entry key="M5" value="6.88884607553596E-15" />
-      <entry key="M10" value="1.5416439610675665E-7" />
-      <entry key="M15" value="5.1125654643187657E-5" />
-      <entry key="M30" value="0.022567010465746433" />
-      <entry key="H1" value="0.6543357649657359" />
-      <entry key="H2" value="4.325174945897738" />
-      <entry key="H4" value="11.979074111756715" />
-      <entry key="D1" value="29.165086677665432" />
-      <entry key="W1" value="34.09688131163033" />
+      <entry key="S30" value="2.8866644836268553E-146" />
+      <entry key="S60" value="2.2660269349934307E-73" />
+      <entry key="M2" value="6.630471957860962E-37" />
+      <entry key="M5" value="5.445340796498041E-15" />
+      <entry key="M10" value="1.3706399251938847E-7" />
+      <entry key="M15" value="4.727139406271879E-5" />
+      <entry key="M30" value="0.021699703228873327" />
+      <entry key="H1" value="0.641638686087301" />
+      <entry key="H2" value="4.2830053771123024" />
+      <entry key="H4" value="11.920534316449583" />
+      <entry key="D1" value="29.141283988940796" />
+      <entry key="W1" value="34.09290453389955" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="6.5704464916929916E-12" />
-      <entry key="MS500" value="0.007469002064388779" />
-      <entry key="S2" value="0.5163730215435511" />
-      <entry key="S5" value="1.6405983999016642" />
-      <entry key="S10" value="2.739547058204" />
-      <entry key="S30" value="4.050148656731371" />
-      <entry key="S60" value="4.494432999783271" />
-      <entry key="M2" value="4.739001579797078" />
-      <entry key="M5" value="4.893553240736363" />
-      <entry key="M10" value="4.946432154880179" />
-      <entry key="M15" value="4.9653102889558625" />
-      <entry key="M30" value="5.444229803892243" />
-      <entry key="H1" value="17.244229869687306" />
-      <entry key="H2" value="80.91283758581974" />
-      <entry key="H4" value="208.14996460327268" />
-      <entry key="D1" value="485.922315198382" />
-      <entry key="W1" value="564.6222891724534" />
+      <entry key="MS100" value="4.637983189852482E-7" />
+      <entry key="MS500" value="0.0572334382781104" />
+      <entry key="S2" value="0.7462714855083352" />
+      <entry key="S5" value="1.7430031147592964" />
+      <entry key="S10" value="2.7441607107143047" />
+      <entry key="S30" value="4.405775279106714" />
+      <entry key="S60" value="5.860193637814397" />
+      <entry key="M2" value="7.35920472188956" />
+      <entry key="M5" value="8.75628312462926" />
+      <entry key="M10" value="9.341398904684285" />
+      <entry key="M15" value="9.553316869224414" />
+      <entry key="M30" value="10.216111918068714" />
+      <entry key="H1" value="21.900160432335394" />
+      <entry key="H2" value="85.11922437615502" />
+      <entry key="H4" value="212.13040386138823" />
+      <entry key="D1" value="490.52534194447924" />
+      <entry key="W1" value="569.5563799660491" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -146,7 +146,8 @@
       <workItem from="1788150401588" duration="525000" />
       <workItem from="1788150965338" duration="6615000" />
       <workItem from="1788303912752" duration="592000" />
-      <workItem from="1788305610883" duration="5254000" />
+      <workItem from="1788305610883" duration="6630000" />
+      <workItem from="1788415401079" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -188,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788310833412</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Start Implementing PyQt5">
+      <option name="closed" value="true" />
+      <created>1788324451173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1788324451173</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,14 +215,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>122</line>
+          <line>116</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CalculateAir$main.coverage" NAME="main Coverage Results" MODIFIED="1788309003670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CalculateAir$main.coverage" NAME="main Coverage Results" MODIFIED="1788416030911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CalculateAir$Init.coverage" NAME="Init Coverage Results" MODIFIED="1787873134807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CalculateAir$InitPlane.coverage" NAME="InitPlane Coverage Results" MODIFIED="1787872013086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

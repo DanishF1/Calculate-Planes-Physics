@@ -31,28 +31,22 @@ class MainCalc(QWidget):
         self.setGeometry(980, 540, 500, 600)
 
         #COLUMN 1
-        self.t1 = QLineEdit("Sweep Angle [θ]:")
-        self.t1.setReadOnly(True)
+        self.t1 = QLabel("Sweep Angle [θ]:")
         self.sweepAngle = QLineEdit()
 
-        self.t2 = QLineEdit("Wings Area [m²]:")
-        self.t2.setReadOnly(True)
+        self.t2 = QLabel("Wings Area [m²]:")
         self.wingsArea = QLineEdit()
 
-        self.t3 = QLineEdit("Weight [kg]:")
-        self.t3.setReadOnly(True)
+        self.t3 = QLabel("Weight [kg]:")
         self.weight = QLineEdit()
 
-        self.t4 = QLineEdit("Wings Length: [m]")
-        self.t4.setReadOnly(True)
+        self.t4 = QLabel("Wings Length: [m]")
         self.wingsLength = QLineEdit()
 
-        self.t5 = QLineEdit("Tip Length [m]:")
-        self.t5.setReadOnly(True)
+        self.t5 = QLabel("Tip Length [m]:")
         self.tipLength = QLineEdit()
 
-        self.t6 = QLineEdit("Weight [m]:")
-        self.t6.setReadOnly(True)
+        self.t6 = QLabel("Weight [m]:")
         self.rootChord = QLineEdit()
 
         self.calculate = QPushButton("Calculate")
@@ -84,7 +78,7 @@ class MainCalc(QWidget):
         self.master.addLayout(self.col1, 45)
         self.master.addLayout(self.col2, 55)
 
-        self.col1.setSpacing(2)
+        self.col1.setSpacing(0)
         self.setLayout(self.master)
 
     def calculateNow(self):
