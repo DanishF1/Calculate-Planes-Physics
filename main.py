@@ -1,5 +1,7 @@
 import asyncio
 import sys
+from sqlite3 import connect
+
 import PyQt5
 from PyQt5 import QtWidgets
 
@@ -99,8 +101,30 @@ class MainCalc(QWidget):
         self.col1.setSpacing(0)
         self.setLayout(self.master)
 
+        self.sweepAngle.returnPressed.connect(self.unselect)
+        self.rootChord.returnPressed.connect(self.unselect)
+        self.weight.returnPressed.connect(self.unselect)
+        self.tipLength.returnPressed.connect(self.unselect)
+        self.wingsArea.returnPressed.connect(self.unselect)
+        self.wingsLength.returnPressed.connect(self.unselect)
+
+
     def calculateNow(self):
+        dataSweep = self.sweepAngle.text()
         CalculatePlane()
+        try:
+            float(dataSweep)
+        except:
+            self.editText.text("ERROR")
+            return self.initUI()
+
+    def unselect(self):
+        self.sweepAngle.clearFocus()
+        self.wingsArea.clearFocus()
+        self.wingsLength.clearFocus()
+        self.tipLength.clearFocus()
+        self.rootChord.clearFocus()
+        self.weight.clearFocus()
 
 if __name__ == '__main__':
     # Run it down

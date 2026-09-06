@@ -72,6 +72,10 @@ class CalculatePlane():
         print(f"Lift: {task5}")
         print(f"MAC: {task6}")
 
+        def __str__(self):
+            printReturn = f""""""""
+            return
+
 
 
 
