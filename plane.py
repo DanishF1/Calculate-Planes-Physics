@@ -18,9 +18,6 @@ class inputData:
 
 #Untuk perhitungannya
 class CalculatePlane():
-    def __init__(self):
-        ...
-
     async def stallsp(self, weight, wingsArea):
         stallSpeed = sqrt((2 * 9.81 * weight) / (1.225 * wingsArea * 1.2))
         return stallSpeed
@@ -71,22 +68,15 @@ class CalculatePlane():
         task5 = await asyncio.create_task(self.lift(sweepAngle, wingsArea, task1))
         task6 = await asyncio.create_task(self.mac(rootChord, task4))
 
-        print(f"Stall Speed: {task1}")
-        print(f"Aspect Ratio: {task2}")
-        print(f"Wing Ratio: {task3}")
-        print(f"Taper Ratio: {task4}")
-        print(f"Lift: {task5}")
-        print(f"MAC: {task6}")
-
-        def __str__(self):
-            return {
-                "Stall Speed": f"{task1:.2f} m/s",
-                "Aspect Ratio": f"{task2:.2f}",
-                "Wing Loading": f"{task3:.2f} kg/m²",
-                "Taper Ratio": f"{task4:.2f}",
-                "Estimated Lift": f"{task5:.2f} N",
-                "MAC": f"{task5:.2f} m"
-            }
+        return str({
+            "Stall Speed": f"{task1:.2f} m/s",
+            "Aspect Ratio": f"{task2:.2f}",
+            "Wing Loading": f"{task3:.2f} kg/m²",
+            "Taper Ratio": f"{task4:.2f}",
+            "Estimated Lift": f"{task5:.2f} N",
+            "MAC": f"{task5:.2f} m",
+            "Root Chord": f"{task6} m"
+        })
 
 
 
