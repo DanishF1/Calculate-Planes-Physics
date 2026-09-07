@@ -123,7 +123,7 @@ class MainCalc(QWidget):
                 dataRootChord = float(e),
                 dataWlength = float(f))
             else:
-                INPUT = inputData(dataSweep=0.0,
+                INPUT = inputData(dataSweep=float(a),
                                   dataWeight=float(b),
                                   dataTLength=float(c),
                                   dataWarea=float(d),

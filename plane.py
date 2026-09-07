@@ -4,10 +4,10 @@ import math
 from cmath import sqrt
 from math import cos
 from math import sqrt
-from main import MainCalc
+from dataclasses import dataclass
 
 #Untuk Meng-Input Data dari GUI
-@dataclasses
+@dataclass
 class inputData:
     sweep_angle: float
     wings_area: float
@@ -47,12 +47,12 @@ class CalculatePlane():
         return MAC
 
     async def calculatePlane(self, data: inputData):
-        self.sweepAngle = inputData.sweep_angle
-        self.wingsArea = inputData.wings_area
-        self.weight = inputData.weight
-        self.wingsLength = inputData.wings_length
-        self.tipLength = inputData.tip_length
-        self.rootChord = inputData.root_chord
+        self.sweepAngle = data.sweep_angle
+        self.wingsArea = data.wings_area
+        self.weight = data.weight
+        self.wingsLength = data.wings_length
+        self.tipLength = data.tip_length
+        self.rootChord = data.root_chord
         try:
             wingsArea = float(self.wingsArea)
             weight = float(self.weight)

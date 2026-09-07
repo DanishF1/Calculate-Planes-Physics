@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b571cfa-2897-4b98-bbc0-1bd06a794e83" name="Changes" comment="adding error logics">
-      <change beforePath="$PROJECT_DIR$/.idea/CalculateAir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CalculateAir.iml" afterDir="false" />
+    <list default="true" id="8b571cfa-2897-4b98-bbc0-1bd06a794e83" name="Changes" comment="configurating main.py and plane.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plane.py" beforeDir="false" afterPath="$PROJECT_DIR$/plane.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,59 +40,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000006825793002" />
-      <entry key="S5" value="1.003417138749249" />
-      <entry key="S10" value="1.0586380327916018" />
-      <entry key="S30" value="1.547257446259659" />
-      <entry key="S60" value="2.7494166953163557" />
-      <entry key="M2" value="5.774815275448183" />
-      <entry key="M5" value="14.898769676893364" />
-      <entry key="M10" value="26.374730570607333" />
-      <entry key="M15" value="34.585670504056246" />
-      <entry key="M30" value="48.55911418164795" />
-      <entry key="H1" value="66.64292687524983" />
-      <entry key="H2" value="124.15404393183235" />
-      <entry key="H4" value="242.2733396585067" />
-      <entry key="D1" value="516.7188770567991" />
-      <entry key="W1" value="597.1963132410002" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0000020047684437" />
+      <entry key="S60" value="1.0043901960248822" />
+      <entry key="M2" value="1.2561534977881" />
+      <entry key="M5" value="5.428476141221614" />
+      <entry key="M10" value="16.165328807535207" />
+      <entry key="M15" value="25.967635776300096" />
+      <entry key="M30" value="45.38429230375644" />
+      <entry key="H1" value="68.51284911359848" />
+      <entry key="H2" value="127.13473243540925" />
+      <entry key="H4" value="245.71604629645756" />
+      <entry key="D1" value="526.9842270603464" />
+      <entry key="W1" value="610.5794899240783" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.042163541208132E-13" />
-      <entry key="MS500" value="0.003599913765797225" />
-      <entry key="S2" value="0.2708396872888789" />
-      <entry key="S5" value="0.8245005433046125" />
-      <entry key="S10" value="1.3883937969723017" />
-      <entry key="S30" value="2.228253461330903" />
-      <entry key="S60" value="2.5733792483160842" />
-      <entry key="M2" value="2.8490457632437036" />
-      <entry key="M5" value="3.5401604804957696" />
-      <entry key="M10" value="4.681967683193292" />
-      <entry key="M15" value="5.596227246686659" />
-      <entry key="M30" value="7.185306428770328" />
-      <entry key="H1" value="8.819823183585163" />
-      <entry key="H2" value="12.679809003000496" />
-      <entry key="H4" value="20.402496854641196" />
-      <entry key="D1" value="38.612147072307025" />
-      <entry key="W1" value="44.00579135382236" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="1.0220958121901926E-97" />
+      <entry key="S5" value="1.6144278012042345E-39" />
+      <entry key="S10" value="4.719866585532354E-20" />
+      <entry key="S30" value="9.138068691055751E-7" />
+      <entry key="S60" value="0.0025665787885387247" />
+      <entry key="M2" value="0.15423609238333064" />
+      <entry key="M5" value="2.019786186063002" />
+      <entry key="M10" value="5.214003127696112" />
+      <entry key="M15" value="7.465447877876065" />
+      <entry key="M30" value="11.198076850420465" />
+      <entry key="H1" value="14.416210636503466" />
+      <entry key="H2" value="19.115462570626647" />
+      <entry key="H4" value="27.28230979495503" />
+      <entry key="D1" value="46.293293137948986" />
+      <entry key="W1" value="51.954631492824845" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.4355151628599792E-6" />
-      <entry key="MS500" value="0.06783885519882094" />
-      <entry key="S2" value="0.5850956439697094" />
-      <entry key="S5" value="1.2983427663196674" />
-      <entry key="S10" value="2.070991478047379" />
-      <entry key="S30" value="3.592526459077378" />
-      <entry key="S60" value="5.1999577545581035" />
-      <entry key="M2" value="8.536269998125078" />
-      <entry key="M5" value="18.38172113629979" />
-      <entry key="M10" value="31.013132212740995" />
-      <entry key="M15" value="40.14492275472611" />
-      <entry key="M30" value="55.71878234640388" />
-      <entry key="H1" value="75.44461306446941" />
-      <entry key="H2" value="136.81644656817366" />
-      <entry key="H4" value="262.65938128719273" />
-      <entry key="D1" value="555.3255220712672" />
-      <entry key="W1" value="641.201207599612" />
+      <entry key="MS100" value="9.303105449647826E-4" />
+      <entry key="MS500" value="0.24758571798325615" />
+      <entry key="S2" value="0.7053934086097214" />
+      <entry key="S5" value="0.8697061855211606" />
+      <entry key="S10" value="0.932580390916065" />
+      <entry key="S30" value="0.9770048030762044" />
+      <entry key="S60" value="0.9953030980814884" />
+      <entry key="M2" value="1.4014493551052745" />
+      <entry key="M5" value="7.425364320690001" />
+      <entry key="M10" value="21.347041718179987" />
+      <entry key="M15" value="33.39989989220878" />
+      <entry key="M30" value="56.55462562078505" />
+      <entry key="H1" value="82.90830720108916" />
+      <entry key="H2" value="146.23128645536832" />
+      <entry key="H4" value="272.98107371143044" />
+      <entry key="D1" value="573.2717973480345" />
+      <entry key="W1" value="662.5331880386359" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -234,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788744360696</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="configurating main.py and plane.py">
+      <option name="closed" value="true" />
+      <created>1788774753905</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1788774753910</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,21 +255,22 @@
     <MESSAGE value="turning datas to float logic" />
     <MESSAGE value="making the codes a little bit cleaner" />
     <MESSAGE value="adding error logics" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding error logics" />
+    <MESSAGE value="configurating main.py and plane.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="configurating main.py and plane.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
-          <line>168</line>
+          <line>170</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CalculateAir$main.coverage" NAME="main Coverage Results" MODIFIED="1788772697917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CalculateAir$main.coverage" NAME="main Coverage Results" MODIFIED="1788775415227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CalculateAir$Init.coverage" NAME="Init Coverage Results" MODIFIED="1787873134807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CalculateAir$InitPlane.coverage" NAME="InitPlane Coverage Results" MODIFIED="1787872013086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
