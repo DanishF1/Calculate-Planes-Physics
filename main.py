@@ -119,6 +119,7 @@ class MainCalc(QWidget):
         try:
             if b == "" or c == "" or d == "" or e == "" or f == "":
                 self.unselect()
+                self.showBlank()
                 return self.calculateNow
             elif a == "":
                 dataWeight = float(b)
@@ -136,9 +137,10 @@ class MainCalc(QWidget):
         except:
             print("err")
             self.unselect()
+            self.showError()
             return self.calculateNow
 
-        result = dataSweep / dataWeight * dataRootChord * dataWlength
+        result = dataWarea / dataWeight * dataRootChord * dataWlength
         result1 = str(result)
         self.editText.setText(result1)
         self.unselect()
@@ -158,6 +160,12 @@ class MainCalc(QWidget):
         self.tipLength.clearFocus()
         self.rootChord.clearFocus()
         self.weight.clearFocus()
+
+    def showError(self):
+        self.editText.setText("Your previous input has error in it, try again")
+
+    def showBlank(self):
+        self.editText.setText("Wings Area, Wings Length, Tip Length, Root Chord, or Weight cannot be empty! Try again!")
 
 if __name__ == '__main__':
     # Run it down
