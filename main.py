@@ -110,13 +110,61 @@ class MainCalc(QWidget):
 
 
     def calculateNow(self):
-        dataSweep = self.sweepAngle.text()
-        CalculatePlane()
+        a = self.sweepAngle.text()
+        b = self.weight.text()
+        c = self.wingsLength.text()
+        d = self.wingsArea.text()
+        e = self.rootChord.text()
+        f = self.wingsLength.text()
         try:
-            float(dataSweep)
+            if b == "" or c == "" or d == "" or e == "" or f == "":
+                self.sweepAngle.clear()
+                self.weight.clear()
+                self.wingsLength.clear()
+                self.wingsArea.clear()
+                self.rootChord.clear()
+                self.tipLength.clear()
+                return self.calculateNow
+            elif a == "":
+                dataWeight = float(b)
+                dataTLength = float(c)
+                dataWarea = float(d)
+                dataRootChord = float(e)
+                dataWlength = float(f)
+            else:
+                dataSweep = float(a)
+                dataWeight = float(b)
+                dataTLength = float(c)
+                dataWarea = float(d)
+                dataRootChord = float(e)
+                dataWlength = float(f)
         except:
-            self.editText.text("ERROR")
-            return self.initUI()
+            print("err")
+            self.sweepAngle.clear()
+            self.weight.clear()
+            self.wingsLength.clear()
+            self.wingsArea.clear()
+            self.rootChord.clear()
+            self.tipLength.clear()
+            return self.calculateNow
+
+        result = dataSweep / dataWeight * dataRootChord * dataWlength
+        result1 = str(result)
+        self.editText.setText(result1)
+        self.sweepAngle.clear()
+        self.weight.clear()
+        self.wingsLength.clear()
+        self.wingsArea.clear()
+        self.rootChord.clear()
+        self.tipLength.clear()
+
+
+        self.sweepAngle.clear()
+        self.weight.clear()
+        self.wingsLength.clear()
+        self.wingsArea.clear()
+        self.rootChord.clear()
+        self.tipLength.clear()
 
     def unselect(self):
         self.sweepAngle.clearFocus()
@@ -132,7 +180,6 @@ if __name__ == '__main__':
     window = MainCalc()
     window.show()
     sys.exit(app.exec_())
-
 
 
 
