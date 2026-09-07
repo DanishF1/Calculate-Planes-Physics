@@ -104,12 +104,12 @@ class MainCalc(QWidget):
 
 
     def calculateNow(self):
-        a = self.sweepAngle.text()
-        b = self.weight.text()
-        c = self.wingsLength.text()
-        d = self.wingsArea.text()
-        e = self.rootChord.text()
-        f = self.wingsLength.text()
+        a = self.sweepAngle.text().strip()
+        b = self.weight.text().strip()
+        c = self.wingsLength.text().strip()
+        d = self.wingsArea.text().strip()
+        e = self.rootChord.text().strip()
+        f = self.wingsLength.text().strip()
         try:
             if b == "" or c == "" or d == "" or e == "" or f == "":
                 self.unselect()
@@ -126,6 +126,10 @@ class MainCalc(QWidget):
                 )
 
             else:
+                x = float(a)
+                if x > 1:
+                    self.showErrSeepAngle()
+                    return
                 INPUT = inputData(
                     sweep_angle=float(self.sweepAngle.text()),
                     wings_area=float(self.wingsArea.text()),
@@ -166,6 +170,8 @@ class MainCalc(QWidget):
 
     def showBlank(self):
         self.editText.setText("Wings Area, Wings Length, Tip Length, Root Chord, or Weight cannot be empty! Try again!")
+    def showErrSeepAngle(self):
+        self.editText.setText("Sweep Angle should be a decimal between 0.0 - 1.0, try again!")
 
 if __name__ == '__main__':
     # Run it down
