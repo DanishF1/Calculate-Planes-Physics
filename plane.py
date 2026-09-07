@@ -1,9 +1,22 @@
 import asyncio
+import dataclasses
 import math
 from cmath import sqrt
 from math import cos
 from math import sqrt
+from main import MainCalc
 
+#Untuk Meng-Input Data dari GUI
+@dataclasses
+class inputData:
+    sweep_angle: float
+    wings_area: float
+    weight: float
+    wings_length: float
+    tip_length: float
+    root_chord: float
+
+#Untuk perhitungannya
 class CalculatePlane():
     def __init__(self):
         asyncio.run(self.calculatePlane())
@@ -33,20 +46,13 @@ class CalculatePlane():
         MAC = 2 / 3 * rootChord * (1 + taperRatio + (taperRatio) ** 2) / (1 + taperRatio)
         return MAC
 
-    async def calculatePlane(self):
-        x = input("Plane have sweep? [Y/N]")
-        if x == "Y" or x == "y":
-            self.sweepAngle = input("Angle on LE Sweep? (decimal)")
-        elif x == "N" or x == "n":
-            self.sweepAngle = 0
-        else:
-            print("Invalid input")
-            return
-        self.wingsArea = input("Wings Area [m²]")
-        self.weight = input("Weight [kg]")
-        self.wingsLength = input("Wings Length [m]")
-        self.tipLength = input("Tip Length [m]")
-        self.rootChord = input("Root Chord [m]")
+    async def calculatePlane(self, data: inputData):
+        self.sweepAngle = inputData.sweep_angle
+        self.wingsArea = inputData.wings_area
+        self.weight = inputData.weight
+        self.wingsLength = inputData.wings_length
+        self.tipLength = inputData.tip_length
+        self.rootChord = inputData.root_chord
         try:
             wingsArea = float(self.wingsArea)
             weight = float(self.weight)
@@ -73,9 +79,14 @@ class CalculatePlane():
         print(f"MAC: {task6}")
 
         def __str__(self):
-            printReturn = f""""""""
-            return
-
+            return {
+                "Stall Speed": f"{task1:.2f} m/s",
+                "Aspect Ratio": f"{task2:.2f}",
+                "Wing Loading": f"{task3:.2f} kg/m²",
+                "Taper Ratio": f"{task4:.2f}",
+                "Estimated Lift": f"{task5:.2f} N",
+                "MAC": f"{task5:.2f} m"
+            }
 
 
 
