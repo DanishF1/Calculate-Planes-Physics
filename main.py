@@ -101,12 +101,12 @@ class MainCalc(QWidget):
         self.col1.setSpacing(0)
         self.setLayout(self.master)
 
-        self.sweepAngle.returnPressed.connect(self.unselect)
-        self.rootChord.returnPressed.connect(self.unselect)
-        self.weight.returnPressed.connect(self.unselect)
-        self.tipLength.returnPressed.connect(self.unselect)
-        self.wingsArea.returnPressed.connect(self.unselect)
-        self.wingsLength.returnPressed.connect(self.unselect)
+        self.sweepAngle.returnPressed.connect(self.clearFocus)
+        self.rootChord.returnPressed.connect(self.clearFocus)
+        self.weight.returnPressed.connect(self.clearFocus)
+        self.tipLength.returnPressed.connect(self.clearFocus)
+        self.wingsArea.returnPressed.connect(self.clearFocus)
+        self.wingsLength.returnPressed.connect(self.clearFocus)
 
 
     def calculateNow(self):
@@ -118,12 +118,7 @@ class MainCalc(QWidget):
         f = self.wingsLength.text()
         try:
             if b == "" or c == "" or d == "" or e == "" or f == "":
-                self.sweepAngle.clear()
-                self.weight.clear()
-                self.wingsLength.clear()
-                self.wingsArea.clear()
-                self.rootChord.clear()
-                self.tipLength.clear()
+                self.unselect()
                 return self.calculateNow
             elif a == "":
                 dataWeight = float(b)
@@ -140,33 +135,23 @@ class MainCalc(QWidget):
                 dataWlength = float(f)
         except:
             print("err")
-            self.sweepAngle.clear()
-            self.weight.clear()
-            self.wingsLength.clear()
-            self.wingsArea.clear()
-            self.rootChord.clear()
-            self.tipLength.clear()
+            self.unselect()
             return self.calculateNow
 
         result = dataSweep / dataWeight * dataRootChord * dataWlength
         result1 = str(result)
         self.editText.setText(result1)
-        self.sweepAngle.clear()
-        self.weight.clear()
-        self.wingsLength.clear()
-        self.wingsArea.clear()
-        self.rootChord.clear()
-        self.tipLength.clear()
-
-
-        self.sweepAngle.clear()
-        self.weight.clear()
-        self.wingsLength.clear()
-        self.wingsArea.clear()
-        self.rootChord.clear()
-        self.tipLength.clear()
+        self.unselect()
 
     def unselect(self):
+        self.sweepAngle.clear()
+        self.wingsArea.clear()
+        self.wingsLength.clear()
+        self.tipLength.clear()
+        self.rootChord.clear()
+        self.weight.clear()
+
+    def clearFocus(self):
         self.sweepAngle.clearFocus()
         self.wingsArea.clearFocus()
         self.wingsLength.clearFocus()
