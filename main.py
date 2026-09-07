@@ -14,6 +14,7 @@ from PyQt5.QtWidgets import (
     QLabel,
     )
 from PyQt5.QtGui import QFont
+import asyncio
 
 #Pure untuk GUI
 class MainCalc(QWidget):
@@ -116,28 +117,33 @@ class MainCalc(QWidget):
                 return self.calculateNow
             elif a == "":
                 INPUT = inputData(
-                dataSweep = 0.0,
-                dataWeight = float(b),
-                dataTLength = float(c),
-                dataWarea = float(d),
-                dataRootChord = float(e),
-                dataWlength = float(f))
+                        sweep_angle = 0.0,
+                        wings_area=float(self.wingsArea.text()),
+                        weight=float(self.weight.text()),
+                        wings_length=float(self.wingsLength.text()),
+                        tip_length=float(self.tipLength.text()),
+                        root_chord=float(self.rootChord.text())
+                )
+
             else:
-                INPUT = inputData(dataSweep=float(a),
-                                  dataWeight=float(b),
-                                  dataTLength=float(c),
-                                  dataWarea=float(d),
-                                  dataRootChord=float(e),
-                                  dataWlength=float(f))
+                INPUT = inputData(
+                    sweep_angle=float(self.sweepAngle.text()),
+                    wings_area=float(self.wingsArea.text()),
+                    weight=float(self.weight.text()),
+                    wings_length=float(self.wingsLength.text()),
+                    tip_length=float(self.tipLength.text()),
+                    root_chord=float(self.rootChord.text())
+                )
+
         except:
             print("err")
             self.unselect()
             self.showError()
             return self.calculateNow
 
-        CalculatePlane.calculatePlane(INPUT)
-        self.unselect()
-        self.editText.setText(CalculatePlane)
+        calc = CalculatePlane()
+        hasil = asyncio.run(calc.calculatePlane(INPUT))
+        self.editText.setText(hasil)
 
     def unselect(self):
         self.sweepAngle.clear()

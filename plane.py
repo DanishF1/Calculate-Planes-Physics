@@ -19,7 +19,7 @@ class inputData:
 #Untuk perhitungannya
 class CalculatePlane():
     def __init__(self):
-        asyncio.run(self.calculatePlane())
+        ...
 
     async def stallsp(self, weight, wingsArea):
         stallSpeed = sqrt((2 * 9.81 * weight) / (1.225 * wingsArea * 1.2))
